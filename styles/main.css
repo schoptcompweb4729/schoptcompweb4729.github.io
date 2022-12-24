@@ -123,6 +123,7 @@
 
 :root {
   --font-color: #000000;
+  --code-font-color: #cfcfcf;
   --main-content-bg-color: #ffffff;
   --sidebar-bg-color: #ffffff;
   --header-bg-color: #ffffff;
@@ -137,6 +138,7 @@
 }
 
 body[data-theme="dark"] {
+  --code-font-color: #151515;
   --sidebar-link-anim-color: #ffffff44;
   --font-color: #ffffff;
   --main-content-bg-color: #1f1f1f;
@@ -156,6 +158,7 @@ body[data-theme="dark"] {
   width: 100%;
   height: 130%;
   user-select: none;
+  z-index: -2;
   -webkit-user-drag: none;
 }
 
@@ -268,6 +271,11 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   background: green;
+}
+
+code {
+  font-family: monospace !important;
+  background-color: var(--code-font-color);
 }
 
 .header-title-container {
