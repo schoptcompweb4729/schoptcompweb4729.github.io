@@ -652,5 +652,5 @@ code {
 }
 
 .ja-tooltip-acro {
-  text-decoration: dashed blue;
+  text-decoration: underline dashed;
 }
