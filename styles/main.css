@@ -141,8 +141,8 @@
   --content-inner-border-color: #000000;
   --sidebar-link-anim-color: #00000044;
   --link-color: #0000ee;
-  --brand-color-1: #ff9500;
-  --brand-color-2: #ff0000;
+  --brand-color-1: #f9ff50;
+  --brand-color-2: #74ff58;
   --button-product-gradient: linear-gradient(45deg, var(--brand-color-1), var(--brand-color-2), var(--brand-color-1));
 }
 
@@ -293,7 +293,6 @@ code {
   align-items: center;
 }
 
-
 .settings-btn {
   margin-right: 30px;
   font-size: 30px !important;
@@ -363,6 +362,11 @@ code {
   transition: 0.2s ease;
 }
 
+/* .header-c-name a {
+  height: 54px;
+} */
+
+
 .side-bar-nav-container {
   display: none;
   width: 100%;
@@ -428,10 +432,9 @@ code {
 
 .product-btn:hover {
   transform: translateY(-4px);
-  background-position: -365px;
+  background-position: -100%;
   box-shadow: 0 2px 4px 0px gray;
   background-color: red;
-  color: white;
 }
 
 .main-page-start {
