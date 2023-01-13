@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     document.getElementsByTagName("body")[0].removeAttribute("data-theme");
   }
-  console.log("hi")
 }) 
 
 if (localStorage.getItem("darkMode") === null) {
