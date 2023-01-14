@@ -222,9 +222,9 @@ body {
   font-size: 1.2rem;
   overflow: overlay;
   scroll-behavior: smooth;
-  position: absolute;
+  /* position: absolute;
   height: 100%;
-  width: 100%;
+  width: 100%; */
 }
 
 a {
