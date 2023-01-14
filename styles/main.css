@@ -104,6 +104,20 @@
     top: 60px !important;
     height: calc(100vh - 253px) !important;
   }
+  .toggler-wrapper {
+    width: 40px !important;
+    height: 20px !important;
+  }
+  .toggler-wrapper.checkanim .toggler-knob {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50%;
+    top: 2px !important;
+    background-color: #fff;
+  }
+  .toggler-wrapper.checkanim input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+    left: calc(100% - 19px - 0px) !important;
+  }
 }
 
 @media (max-width: 475px) {
@@ -145,6 +159,7 @@
   --brand-color-2: #74ff58;
   --button-product-gradient: linear-gradient(45deg, var(--brand-color-1), var(--brand-color-2), var(--brand-color-1));
 }
+
 
 body[data-theme="dark"] {
   --code-font-color: #151515;
@@ -207,6 +222,9 @@ body {
   font-size: 1.2rem;
   overflow: overlay;
   scroll-behavior: smooth;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -564,9 +582,18 @@ code {
   margin: 5px 0px;
 }
 
+/* .settings {
+  display: flexbox;
+  width: 100%;
+  text-align: initial;
+  justify-content: center;
+  align-items: center;
+} */
+
 .checkboxes-div {
-  position: relative;
+  transform: translateY(-33px);
   float: right;
+  text-align: right;
 }
 
 .settings-option-text {
@@ -656,4 +683,19 @@ code {
 
 .ja-tooltip-acro {
   text-decoration: underline dashed;
+}
+
+.bottombar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.425);
+  position: fixed;
+  display: block;
+  bottom: 0px;
+  display: none;
+}
+
+footer {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.425);
+  position: fixed;
+  display: block;
+  bottom: 0;
 }
