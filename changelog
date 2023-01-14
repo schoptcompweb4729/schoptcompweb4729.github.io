@@ -1,0 +1,8 @@
+- 1/13/2023
+  * Added unofficial website banner on the bottom
+  * Added a website changelog
+  * Added new setting "Disable Unofficial Warning"
+  * The url bar now shows "https://schoptcompweb4729.github.io/*" instead of "https://schoptcompweb4729.github.io/*.html"
+  * The sidebar now says "Plantable" instead of "c_name" 
+  * The "About" button on the sidebar now links to "/#about" instead of "/about"
+  * The "Plant Enclosure" button in the shop now says "Offsale" instead of "Not currently for sale"
