@@ -135,6 +135,21 @@
   }
 }
 
+@media (perfers-color-scheme: dark) {
+  body {
+    --code-font-color: #151515 !important;
+    --sidebar-link-anim-color: #ffffff44 !important;
+    --font-color: #ffffff !important;
+    --main-content-bg-color: #1f1f1f !important;
+    --sidebar-bg-color: #1f1f1f !important;
+    --header-bg-color: #1f1f1f !important;
+    --header-link-anim-color: #ffffff !important;
+    --header-link-color: #ffffff !important;
+    --content-inner-border-color: #ffffff !important;
+    --link-color: #0099ff !important;
+  }
+}
+
 @keyframes header-link-hover {
   0% {
     box-shadow: 0px 0px 0px 0px;

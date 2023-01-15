@@ -1,6 +1,9 @@
 - 1/14/2023
   * Fixed a bug where the header dissapeared when scrolling too far
   * Changed the link /shop/products/plant-stand to no longer show ".html"
+  * Dark Mode now displays correctly
+  * Forced removal of ".html" at the end of webpages
+  * The "Plant Enclosure" button in the shop now links to "#plant-enclosure" instead of "#product2"
 
 - 1/13/2023
   * Added unofficial website banner on the bottom

@@ -2,6 +2,8 @@ const sidebarBTN = document.getElementById("sidebar-btn");
 const sidebar = document.getElementById("sidebar");
 var unofficialWarningStatus = localStorage.getItem("unofficialWarning");
 
+
+// enable global settings
 document.addEventListener("DOMContentLoaded", () => {
   if (darkModeStatus === "true") {
     document.getElementsByTagName("body")[0].setAttribute("data-theme","dark");
@@ -31,7 +33,7 @@ var darkModeStatus = localStorage.getItem("darkMode");
 
 
 
-
+// sidebar handler
 sidebarBTN.addEventListener("click", (e) => {
   console.log("hello")
   if (sidebar.classList.contains("sidebar-show")) {
@@ -51,4 +53,8 @@ document.addEventListener('mouseup', function(e) {
 });
 
 
-
+// remove .html from url
+if (window.location.pathname.includes(".html") && window.location.hostname !== "app-test.gage") {
+  var newPath = window.location.pathname.slice(1,-5)
+  window.location.pathname = newPath
+}
