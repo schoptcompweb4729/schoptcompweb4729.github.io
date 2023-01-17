@@ -2,37 +2,6 @@ const sidebarBTN = document.getElementById("sidebar-btn");
 const sidebar = document.getElementById("sidebar");
 var unofficialWarningStatus = localStorage.getItem("unofficialWarning");
 
-
-// enable global settings
-document.addEventListener("DOMContentLoaded", () => {
-  if (darkModeStatus === "true") {
-    document.getElementsByTagName("body")[0].setAttribute("data-theme","dark");
-  } else {
-    document.getElementsByTagName("body")[0].removeAttribute("data-theme");
-  }
-  if (unofficialWarningStatus === "true") {
-    setTimeout(() => {
-      console.log()
-      document.getElementById("bottombar").style.display = "none"
-      console.log(document.getElementById("bottombar").style.bottom)
-    }, 100);
-  } else {
-    document.getElementById("bottombar").style.display = "unset"
-  }
-}) 
-
-if (localStorage.getItem("darkMode") === null) {
-  localStorage.setItem("darkMode", "false")
-}
-
-if (localStorage.getItem("unofficialWarning") === null) {
-  localStorage.setItem("unofficialWarning", "false")
-}
-
-var darkModeStatus = localStorage.getItem("darkMode");
-
-
-
 // sidebar handler
 sidebarBTN.addEventListener("click", (e) => {
   console.log("hello")
@@ -58,3 +27,15 @@ if (window.location.pathname.includes(".html") && window.location.hostname !== "
   var newPath = window.location.pathname.slice(1,-5)
   window.location.pathname = newPath
 }
+
+// check for code blocks and run them
+setTimeout(() => {
+  var isCodeBlock = /\{\{[^}]*\}\}/i;
+  var potentialCodeBlock = document.getElementsByClassName("codex")
+
+  for (i = 0; i < potentialCodeBlock.length; i++) {
+    if (isCodeBlock.test(potentialCodeBlock[i].innerText)) {
+      potentialCodeBlock[i].innerText = eval(potentialCodeBlock[i].innerText.slice(3,-3))
+    }
+  }
+}, 10);

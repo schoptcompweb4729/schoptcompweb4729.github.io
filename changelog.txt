@@ -1,3 +1,7 @@
+- 1/16/2024
+  * Fixed a bug where the sidebar didn't open
+  * Made page transitions smoother
+
 - 1/14/2023
   * Fixed a bug where the header dissapeared when scrolling too far
   * Changed the link /shop/products/plant-stand to no longer show ".html"

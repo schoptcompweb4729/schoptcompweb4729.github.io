@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="preload" href="/src/scripts/index.js">
-    <script src="/src/scripts/index.js"></script>
+    <script src="/src/scripts/load_settings.js"></script>
     <title>404 | Page Not Found</title>
   </head>
   <body>
@@ -55,7 +54,7 @@
         <div class="main-page-content">
           <h1>404</h1>
           <p>Page Not Found</p>
-          <p>The page <code id="p-uri-display">{{ window.location.pathname }}</code> was not found on this server</p>
+          <p>The page <code id="p-uri-display" class="codex">{{ window.location.pathname }}</code> was not found on this server</p>
           <br>
         </div>
       </section>
@@ -63,6 +62,6 @@
     <footer>
       <iframe src="/bottombar.html" frameborder="0" width="100%" height="35" class="bottombar"></iframe>
     </footer>
-    <script src="/src/scripts/404.js"></script>
+    <script src="/src/scripts/index.js"></script>
   </body>
 </html>
