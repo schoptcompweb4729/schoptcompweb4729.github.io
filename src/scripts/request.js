@@ -31,8 +31,8 @@ try {
     body: new URLSearchParams({
         'content': msgToSend
     })
-  }).then(window.location.href = "/support.html")
+  }).then(window.location.href = "/support")
 } catch (e) {
   alert(err)
-  window.location.href = "/support.html"
+  window.location.href = "/support"
 }
