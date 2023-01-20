@@ -467,6 +467,29 @@ code {
   transform: translateY(-4px);
   background-position: -100%;
   box-shadow: 0 2px 4px 0px gray;
+}
+
+.main-btn {
+  position: relative;
+  display: inline-block;
+  background: var(--button-product-gradient);
+  background-size: 200%;
+  background-position: -0px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-decoration: none;
+  color: black !important;
+  user-select: none;
+}
+
+.main-btn:hover {
+  transform: translateY(-4px);
+  background-position: -100%;
+  box-shadow: 0 2px 4px 0px gray;
   background-color: red;
 }
 
@@ -713,4 +736,35 @@ footer {
   position: fixed;
   display: block;
   bottom: 0;
+}
+
+.support-main * {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: var(--code-font-color);
+  color: var(--font-color);
+}
+
+.support-em-su {
+  height: 40px;
+  text-indent: 10px;
+}
+
+.support-main input, .support-main textarea {
+  border-radius: 10px;
+}
+
+.support-main textarea {
+  padding: 10px;
+  width: calc(100% - 20px);
+  resize: vertical;
+}
+
+.support-main button {
+  height: 40px;
 }
