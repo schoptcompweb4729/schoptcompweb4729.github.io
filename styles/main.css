@@ -768,3 +768,19 @@ footer {
 .support-main button {
   height: 40px;
 }
+
+.company-photo-team-home {
+  border-radius: 15px;
+}
+
+.plantable-listing-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plantable-listing-prices p {
+  text-align: left;
+  padding-left: 10%;
+  width: 100%;
+}
