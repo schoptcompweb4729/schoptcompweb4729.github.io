@@ -39,6 +39,12 @@
   .header-c-name img {
     margin-right: 20px;
   }
+  .plantable-listing-item img {
+    width: 50vw;
+  }
+  .plantable-listing-item {
+    padding: 6% !important;
+  }
 }
 
 @media (max-width: 770px) {
@@ -89,6 +95,12 @@
   .main-page-start-image {
     top: 60px !important;
     height: calc(100vh - 243px) !important;
+  }
+  .plantable-listing-item img {
+    width: 40vw;
+  }
+  .plantable-listing-item {
+    padding: 3% 6% 3% 3% !important;
   }
 }
 
@@ -251,7 +263,7 @@ header {
   display: block;
   top: 0;
   background-color: var(--header-bg-color);
-  box-shadow: 0 0 10px 0 gray;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.514);
   z-index: 6;
   user-select: none;
 }
@@ -489,7 +501,7 @@ code {
 .main-btn:hover {
   transform: translateY(-4px);
   background-position: -100%;
-  box-shadow: 0 2px 4px 0px gray;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.514);
   background-color: red;
 }
 
@@ -777,10 +789,29 @@ footer {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--code-font-color);
+  width: max-content !important;
+  padding: 50px;
+  border-radius: 10px;
 }
 
-.plantable-listing-prices p {
+.plantable-listing-info p {
   text-align: left;
   padding-left: 10%;
   width: 100%;
+}
+
+.margin-0 {
+  margin: 0 !important;
+}
+
+.plantable-listing-container, .plantable-listing-item {
+  width: 100%;
+}
+
+.plantable-listing-buy-btn-container {
+  display: flex;
+  justify-content: start;
+  margin-left: 25px;
+  margin-top: 10%;
 }

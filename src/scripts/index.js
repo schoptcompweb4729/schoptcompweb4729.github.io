@@ -7,7 +7,7 @@ sidebarBTN.addEventListener("click", (e) => {
   console.log("hello")
   if (sidebar.classList.contains("sidebar-show")) {
     sidebar.classList.remove("sidebar-show")
-    document.body.style.overflow = "overlay"
+    document.body.style.overflow = "auto"
   } else {
     sidebar.classList.add("sidebar-show")
     document.body.style.overflow = "hidden"
@@ -17,7 +17,7 @@ sidebarBTN.addEventListener("click", (e) => {
 document.addEventListener('mouseup', function(e) {
   if (!sidebar.contains(e.target) && !sidebarBTN.contains(e.target)) {
     sidebar.classList.remove("sidebar-show")
-    document.body.style.overflow = "overlay"
+    document.body.style.overflow = "auto"
   }
 });
 
