@@ -182,9 +182,13 @@
   --content-inner-border-color: #000000;
   --sidebar-link-anim-color: #00000044;
   --link-color: #0000ee;
-  --brand-color-1: #f9ff50;
-  --brand-color-2: #74ff58;
-  --button-product-gradient: linear-gradient(45deg, var(--brand-color-1), var(--brand-color-2), var(--brand-color-1));
+  --brand-color-yellow: #f9ff50;
+  --brand-color-green: #74ff58;
+  --brand-color-logo-yellow: #eaec6d;
+  --brand-colo-logo-green: #7fec6d;
+  --brand-color-gy-mix: #bdf537;
+  --brand-color-slogan-bg: #203800;
+  --button-product-gradient: linear-gradient(45deg, var(--brand-color-yellow), var(--brand-color-green), var(--brand-color-yellow));
 }
 
 
@@ -478,7 +482,7 @@ code {
 .product-btn:hover {
   transform: translateY(-4px);
   background-position: -100%;
-  box-shadow: 0 2px 4px 0px gray;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.514);
 }
 
 .main-btn {
@@ -700,8 +704,9 @@ code {
   z-index: 0;
   width: 49%;
   min-width: 300px;
+  font-size: 30px;
   /* margin-bottom: 10px; */
-  height: 300px;
+  aspect-ratio: 1.5;
   border-radius: 5px;
   border: 2px solid var(--content-inner-border-color);
   transition: 0.3s ease;
@@ -729,6 +734,12 @@ code {
 
 .shop-card-inner:hover {
   background-position: calc(100% + 2px) !important;
+}
+
+.shop-card-inner-span {
+  background-color: var(--brand-color-slogan-bg);
+  padding: 40px 100px;
+  border-radius: 10px;
 }
 
 .ja-tooltip-acro {
@@ -783,6 +794,8 @@ footer {
 
 .company-photo-team-home {
   border-radius: 15px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .plantable-listing-item {
