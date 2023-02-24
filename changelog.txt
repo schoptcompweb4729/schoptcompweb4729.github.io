@@ -1,3 +1,9 @@
+- 2/24/2023
+  * Added new transparent logo image to src
+  * Removed plant enclosure option on the shop.
+  * Shop index.html has been chnaged to look like /shop/products/plant-stand
+  * Shop now only has one plant stand
+
 - 2/19/2023
   * Added favicon
 

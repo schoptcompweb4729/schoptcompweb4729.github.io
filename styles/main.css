@@ -828,3 +828,7 @@ footer {
   margin-left: 25px;
   margin-top: 10%;
 }
+
+.plantable-ps-order-form {
+  overflow: hidden;
+}

@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <script src="/src/scripts/load_settings.js"></script>
-    <title>Plant Stands - Plantable</title>
+    <title>Shop - Plantable</title>
   </head>
   <body>
     <img class="background-dim" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia2.fdncms.com%2Fstranger%2Fimager%2Fu%2Flarge%2F43820816%2F1591119073-screen_shot_2020-06-02_at_10.30.13_am.png&f=1&nofb=1&ipt=f72f8778f300c804b7368509d94dd77195b1e9e10fb18b51d31e78f4e98e3047&ipo=images"></img>
@@ -53,43 +53,22 @@
       <section>
         <div>
           <div class="main-page-content">
-            <h1>Plant Stands</h1>
+            <h1 class="main-h1">Shop</h1>
             <div class="content-submain">
-              <div class="plantable-listing-container">
-                <div class="plantable-listing-item">
-                  <div class="plantable-listing-image">
-                    <img src="/src/IMG/placeholder.png" alt="Placeholder">
-                  </div>
-                  <div class="plantable-listing-info">
-                    <div>
-                      <p>Plant Stand Name</p>
-                    </div>
-                    <div>
-                      <p>Price $XX.XX</p>
-                    </div>
-                    <div class="plantable-listing-buy-btn-container">
-                      <button class="main-btn plantable-listing-buy-btn" data-item-id="1">Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <br><br>
-                <div class="plantable-listing-item">
-                  <div class="plantable-listing-image">
-                    <img src="/src/IMG/placeholder.png" alt="Placeholder">
-                  </div>
-                  <div class="plantable-listing-info">
-                    <div>
-                      <p>Plant Stand Name</p>
-                    </div>
-                    <div>
-                      <p>Price $XX.XX</p>
-                    </div>
-                    <div class="plantable-listing-buy-btn-container">
-                      <button class="main-btn plantable-listing-buy-btn" data-item-id="2">Buy</button>
-                    </div>
-                  </div>
+            <a href="/shop/products/plant-stand" class="shop-card-link">              
+              <div class="shop-card" data-cardnum="0">
+                <div class="shop-card-inner">
+                  <span class="shop-card-inner-span">Plant Stands</span>
                 </div>
               </div>
+            </a>
+            <a href="#plant-enclosure" class="shop-card-link">
+              <div class="shop-card" data-cardnum="1">
+                <div class="shop-card-inner">
+                  <span class="shop-card-inner-span">Plant Enclosures (Offsale)</span>
+                </div>
+              </div>
+            </a>
             </div>
           </div>
         </div>
@@ -100,4 +79,4 @@
     </footer>
     <script src="/src/scripts/index.js"></script>
   </body>
-</html>
+</html> -->
