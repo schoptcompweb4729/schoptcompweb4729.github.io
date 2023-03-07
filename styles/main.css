@@ -181,6 +181,7 @@
   --header-link-color: #2b2b2b;
   --content-inner-border-color: #000000;
   --sidebar-link-anim-color: #00000044;
+  --content-submain-background: #e3e3e3;
   --link-color: #0000ee;
   --brand-color-yellow: #f9ff50;
   --brand-color-green: #74ff58;
@@ -203,6 +204,7 @@ body[data-theme="dark"] {
   --header-link-color: #ffffff;
   --content-inner-border-color: #ffffff;
   --link-color: #0099ff;
+  --content-submain-background: #1a1a1a;
 }
 
 .background-dim {
@@ -427,7 +429,7 @@ code {
   height: calc(100% - 64px);
   right: 0;
   top: 64px;
-  box-shadow: 0 0 10px 0 gray;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.514);
   z-index: 5;
   right: -335px;
   transition: 0.3s;
@@ -623,6 +625,7 @@ code {
 
 .content-submain {
   border: 2px solid var(--content-inner-border-color);
+  background-color: var(--content-submain-background);
   border-radius: 10px;
   padding: 15px;
   min-height: 300px;

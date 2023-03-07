@@ -1,3 +1,8 @@
+- 3/6/2023
+  * Fixed a bug where random coloured dots appeared on the background
+  * Made the sidebar have a darker box-shadow
+  * Changed the colour of content-submain
+
 - 2/24/2023
   * Added new transparent logo image to src
   * Removed plant enclosure option on the shop.
