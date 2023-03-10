@@ -174,7 +174,7 @@
 :root {
   --font-color: #000000;
   --code-font-color: #cfcfcf;
-  --main-content-bg-color: #ffffff;
+  --main-content-bg-color: #FFFFFF;
   --sidebar-bg-color: #ffffff;
   --header-bg-color: #ffffff;
   --header-link-anim-color: #000000;
@@ -189,6 +189,7 @@
   --brand-colo-logo-green: #7fec6d;
   --brand-color-gy-mix: #bdf537;
   --brand-color-slogan-bg: #203800;
+  --background-color: #aaaaaa;
   --button-product-gradient: linear-gradient(45deg, var(--brand-color-yellow), var(--brand-color-green), var(--brand-color-yellow));
 }
 
@@ -204,11 +205,12 @@ body[data-theme="dark"] {
   --header-link-color: #ffffff;
   --content-inner-border-color: #ffffff;
   --link-color: #0099ff;
-  --content-submain-background: #1a1a1a;
+  --background-color: #303030;
 }
 
 .background-dim {
-  opacity: 0.8;
+  display: none;
+  opacity: 0;
   position: fixed;
   margin: 0;
   top: 0;
@@ -249,7 +251,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 body {
   margin: 0;
-  background: url("/src/IMG/placeholder.png");
+  background: var(--background-color);
   color: var(--font-color) !important;
   text-align: center;
   font-size: 1.2rem;
@@ -429,7 +431,7 @@ code {
   height: calc(100% - 64px);
   right: 0;
   top: 64px;
-  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.514);
+  box-shadow: 0 0 10px 0 gray;
   z-index: 5;
   right: -335px;
   transition: 0.3s;
@@ -625,7 +627,6 @@ code {
 
 .content-submain {
   border: 2px solid var(--content-inner-border-color);
-  background-color: var(--content-submain-background);
   border-radius: 10px;
   padding: 15px;
   min-height: 300px;
@@ -835,3 +836,9 @@ footer {
 .plantable-ps-order-form {
   overflow: hidden;
 }
+
+.plantable-listing-image img {
+width: 30vw;
+}
+
+/* ren is the best in the world */
